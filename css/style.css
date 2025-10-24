@@ -1,0 +1,38 @@
+.main-logo {
+    height: 50px;  
+    width: 50px;   
+    background-color: darkgrey; 
+    border-radius: 50%;       
+    
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb; /* Garis batas abu-abu */
+}
+
+.banner-placeholder {
+    border: 2px dashed #9ca3af; /* Border putus-putus */
+}
+
+.hq-jakarta {
+    background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=400');
+    background-size: cover;
+    background-position: center;
+}
+
+.hq-london {
+    background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=400');
+    background-size: cover;
+    background-position: center;
+}
+
+.hq-mumbai {
+    background-image: url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=400');
+    background-size: cover;
+    background-position: center;
+}

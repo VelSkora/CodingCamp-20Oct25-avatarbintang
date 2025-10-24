@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title> <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+
+    <header class="main-header p-4"> <div class="main-logo"></div>
+
+        <nav class="flex gap-2"> <a class="border rounded px-4 py-2" href="#home-section">Home</a>
+            <a class="border rounded px-4 py-2" href="#headquarter-section">Our Profile</a>
+            <a class="border rounded px-4 py-2" href="#portfolio-section">Portfolio</a>
+            <a class="border rounded px-4 py-2" href="#message-section">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <section id="home-section" class="p-4 min-h-[500px]">
+            <h1 class="text-3xl font-bold mb-2"><span id="greet-name"></span>Welcome To Website</h1>
+            <p class="text-lg mb-4">ini adalah website latihan pertama coding SE Avatar</p>
+            
+            <div class="banner-placeholder w-full h-[350px] bg-gray-100 flex items-center justify-center text-gray-500">
+                1080x578 (Banner Placeholder)
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="headquarter-section" class="p-4 min-h-[300px]">
+            <h2 class="text-2xl font-bold mb-8 text-center">Our Headquarter</h2>
+            <div class="flex flex-col md:flex-row justify-around items-center gap-8">
+                <div class="text-center">
+                    <div class="w-32 h-32 border-2 border-gray-400 rounded-full mb-2 hq-jakarta"></div>
+                    <p class="font-semibold">Jakarta</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 border-2 border-gray-400 rounded-full mb-2 hq-london"></div>
+                    <p class="font-semibold">London</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 border-2 border-gray-400 rounded-full mb-2 hq-mumbai"></div>
+                    <p class="font-semibold">Mumbai</p>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="portfolio-section" class="portfolio-section p-4 min-h-[200px] bg-gray-50">
+            <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
+            <p class="text-lg">Showcase of my projects and accomplishments.</p>
+        </section>
+
+        <hr />
+
+        <section id="message-section" class="p-4 min-h-[500px]">
+            <h2 class="text-2xl font-bold mb-4">Message Us</h2>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                
+                <div class="w-full md:w-1/2">
+                    <form id="contact-form">
+                        <label for="name-input" class="block mb-2">Nama:</label>
+                        <input type="text" id="name-input" class="border p-2 mb-4 w-full" required>
+
+                        <label for="dob-input" class="block mb-2">Tanggal Lahir:</label>
+                        <input type="date" id="dob-input" class="border p-2 mb-4 w-full" required>
+
+                        <label class="block mb-2">Jenis Kelamin:</label>
+                        <div class="flex gap-4 mb-4">
+                            <input type="radio" id="gender-male" name="gender" value="Laki-Laki" required>
+                            <label for="gender-male">Laki-Laki</label>
+                            <input type="radio" id="gender-female" name="gender" value="Perempuan">
+                            <label for="gender-female">Perempuan</label>
+                        </div>
+
+                        <label for="message-input" class="block mb-2">Pesan:</label>
+                        <textarea id="message-input" name="message" class="border p-2 mb-4 w-full" rows="4" required></textarea>
+
+                        <button type="submit" class="bg-gray-200 border border-gray-400 p-2 rounded w-full font-semibold">Submit</button>
+                    </form>
+                </div>
+
+                <div class="w-full md:w-1/2 border p-4 bg-gray-50 h-fit">
+                    <p><strong>Current Time:</strong> <span id="current-time"></span></p>
+                    <hr class="my-2">
+                    <p><strong>Nama:</strong> <span id="output-name"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="output-dob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="output-gender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr/>
+
+    <footer>
+        <div class="p-4 text-right">
+            <p class="text-sm">Created By: Avatarb</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
